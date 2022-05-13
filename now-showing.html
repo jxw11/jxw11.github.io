@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>上映电影</title>
+  <!-- 引入适配js -->
+  <script src="./js/flexible.js"></script>
+  <!-- 引入jquery -->
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <!-- 引入移动端css -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <!-- 引入自定义css -->
+  <link rel="stylesheet" href="./css/now-showing.min.css">
+</head>
+
+<body>
+  <!-- 头部区域开始 -->
+  <header class="header">
+    <img src="./img/椭圆1拷贝2.png" alt="" class="dw">
+
+    <div class="header-login">
+      <a href="">
+        <img src="./img/箭头(1).png" alt="">
+      </a>
+      <span>特色电影</span>
+    </div>
+    <!-- 切换 -->
+    <ul class="toggle">
+      <li class="li1 active">待使用</li>
+      <li class="li2">所有订单</li>
+    </ul>
+  </header>
+  <!-- 头部区域结束 -->
+
+
+  <!-- 切换区域 -->
+  <ul class="t1">
+    <li>
+      <img src="./img/图层10.png" alt="">
+      <div class="t1-box">
+        <p>哥斯拉大战金刚</p>
+        <div class="d1">
+          <span class="s1">类型</span>
+          <span class="s2">动作,冒险,科幻</span>
+        </div>
+
+        <div class="d1">
+          <span class="s1">片长</span>
+          <span>113分钟</span>
+        </div>
+
+        <div class="d1">
+          <span class="s1">评分</span>
+          <span>8.5</span>
+        </div>
+
+        <a href="./intro.html">立即购票</a>
+      </div>
+    </li>
+
+    <li>
+      <img src="./img/图层11.png" alt="">
+      <div class="t1-box">
+        <p>指环王：护戒使者</p>
+        <div class="d1">
+          <span class="s1">类型</span>
+          <span class="s2">动作,冒险,科幻</span>
+        </div>
+
+        <div class="d1">
+          <span class="s1">片长</span>
+          <span>113分钟</span>
+        </div>
+
+        <div class="d1">
+          <span class="s1">评分</span>
+          <span>8.5</span>
+        </div>
+
+        <a href="">立即购票</a>
+      </div>
+    </li>
+
+    <li>
+      <img src="./img/图层12.png" alt="">
+      <div class="t1-box">
+        <p>八月未央</p>
+        <div class="d1">
+          <span class="s1">类型</span>
+          <span class="s2">动作,冒险,科幻</span>
+        </div>
+
+        <div class="d1">
+          <span class="s1">片长</span>
+          <span>113分钟</span>
+        </div>
+
+        <div class="d1">
+          <span class="s1">评分</span>
+          <span>8.5</span>
+        </div>
+
+        <a href="">立即购票</a>
+      </div>
+    </li>
+  </ul>
+
+  <ul class="t2">
+    <li>
+      <img src="./img/图层10.png" alt="">
+      <div class="t1-box">
+        <p>哥斯拉大战金刚</p>
+        <div class="d1">
+          <span class="s1">类型</span>
+          <span class="s2">动作,冒险,科幻</span>
+        </div>
+
+        <div class="d1">
+          <span class="s1">片长</span>
+          <span>113分钟</span>
+        </div>
+
+        <div class="d1">
+          <span class="s1">评分</span>
+          <span>8.5</span>
+        </div>
+
+        <a href=""  class="w">立即购票</a>
+      </div>
+    </li>
+
+    <li>
+      <img src="./img/图层11.png" alt="">
+      <div class="t1-box">
+        <p>指环王：护戒使者</p>
+        <div class="d1">
+          <span class="s1">类型</span>
+          <span class="s2">动作,冒险,科幻</span>
+        </div>
+
+        <div class="d1">
+          <span class="s1">片长</span>
+          <span>113分钟</span>
+        </div>
+
+        <div class="d1">
+          <span class="s1">评分</span>
+          <span>8.5</span>
+        </div>
+
+        <a href=""  class="w">立即购票</a>
+      </div>
+    </li>
+
+    <li>
+      <img src="./img/图层12.png" alt="">
+      <div class="t1-box">
+        <p>八月未央</p>
+        <div class="d1">
+          <span class="s1">类型</span>
+          <span class="s2">动作,冒险,科幻</span>
+        </div>
+
+        <div class="d1">
+          <span class="s1">片长</span>
+          <span>113分钟</span>
+        </div>
+
+        <div class="d1">
+          <span class="s1">评分</span>
+          <span>8.5</span>
+        </div>
+
+        <a href="" class="w">立即购票</a>
+      </div>
+    </li>
+  </ul>
+</body>
+<script>
+  // 导航栏切换功能
+  $('.t2').hide();
+  $('.toggle').on('click', function (e) {
+    if (!$(e.target).hasClass('active')) {
+      $(e.target).siblings().removeClass('active');
+      $(e.target).addClass('active');
+    }
+    if ($('.li1').hasClass('active')) {
+      $('.t1').fadeIn();
+      $('.t2').hide();
+    } else {
+      $('.t1').hide();
+      $('.t2').fadeIn();
+    }
+  })
+</script>
+
+</html>

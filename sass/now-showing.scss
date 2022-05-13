@@ -1,0 +1,143 @@
+body {
+  min-width: 320px;
+  max-width: 750px;
+  height: 1625px;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 37.5px !important;
+  }
+}
+
+// 头部区域开始
+.header {
+  position: relative;
+  width: 100%;
+  height: 10.4rem;
+  color: #F2F2F2;
+  overflow: hidden;
+  background-color: #0b193f;
+
+  .header-login {
+    width: 100%;
+    height: 2.9333rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 3.3333rem;
+    margin-left: 1.0667rem;
+
+    img {
+      width: .9333rem;
+    }
+
+    span {
+      color: #f2f2f2;
+      font-size: .96rem;
+      font-weight: bold;
+    }
+  }
+
+  .dw {
+    position: absolute;
+    top: -2.3467rem;
+    right: -3.1333rem;
+    width: 8.16rem;
+  }
+
+  .toggle {
+    width: 90%;
+    height: 2.3467rem;
+    margin: 0 auto;
+    background-color: #233052;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: .64rem;
+    margin-top: 1.1733rem;
+
+    li {
+      width: 8.16rem;
+      height: 1.7067rem;
+      color: #FFFFFF;
+      text-align: center;
+      line-height: 1.7067rem;
+    }
+
+    .active {
+      background-color: #ffffff;
+      border-radius: 14px;
+      color: #000122;
+    }
+  }
+
+}
+
+
+
+
+// 区域一
+.t1,.t2 {
+  width: 100%;
+  padding-left: 1.0667rem;
+  margin-top: 1.7067rem;
+  color: #263153;
+
+  li {
+    display: flex;
+    margin-bottom: 1.2267rem;
+
+    img {
+      width: 5.5467rem;
+      border-radius: .3733rem;
+      margin-right: .9067rem;
+    }
+
+    .t1-box {
+      p {
+        font-size: .8533rem;
+        font-weight: bold;
+        color: #000018;
+        margin-top: .4267rem;
+        margin-bottom: .64rem;
+      }
+
+      .d1 {
+        margin: .64rem 0;
+
+        .s1 {
+          color: #8890a3;
+          margin-right: 2.48rem;
+        }
+      }
+
+      a {
+        display: block;
+        width: 4.5333rem;
+        height: 1.4933rem;
+        background: #4073ff;
+        border-radius: 8px;
+        text-align: center;
+        line-height:1.4933rem;
+        color: #ffffff;
+      }
+
+      .w {
+        background-color: #edf0f9;
+        color: #4073FF;
+      }
+    }
+  }
+}
+
+// 区域二
+.t2 {}

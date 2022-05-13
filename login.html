@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登录</title>
+  <!-- 引入适配js -->
+  <script src="./js/flexible.js"></script>
+  <!-- 引入jquery -->
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <!-- 引入移动端css -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <!-- 引入自定义css -->
+  <link rel="stylesheet" href="./css/login.min.css">
+</head>
+
+<body>
+  <!-- 登录头部开始 -->
+  <header class="header">
+    <img src="./img/椭圆1拷贝2.png" alt="" class="dw">
+    <div class="header-login">
+      <a href="">
+        <img src="./img/箭头(1).png" alt="">
+      </a>
+      <span>登录</span>
+    </div>
+  </header>
+  <!-- 登录头部结束 -->
+
+  <!-- 登录表单模块开始 -->
+  <form action="javaScript:;">
+    <div class="login-form">
+
+      <!-- 用户名 -->
+      <div class="user">
+        <div class="user-top">
+          <span>用户名</span>
+        </div>
+        <input type="text" placeholder="请输入您的用户名">
+      </div>
+      <!-- 密码 -->
+      <div class="pwd">
+        <div class="pwd-top">
+          <span>密码</span>
+          <a href="">忘记密码?</a>
+        </div>
+        <input type="password" placeholder="请输入您的密码" class="password">
+        <span class="ye"></span>
+      </div>
+      <!-- 登录按钮 -->
+    <button class="button">立即登录</button>
+      <!-- 注册 -->
+      <a href="./sign.html" class="zhuCe">立即注册</a>
+    </div>
+  </form>
+  <!-- 登录表单模块结束 -->
+</body>
+
+<script>
+  // 小眼睛
+  $('.ye').on('click', function () {
+    if (!$('.password').val() == '') {
+      if (!$(this).hasClass('isy')) {
+        $(this).addClass('isy');
+        $('.password').attr('type', 'text');
+      } else {
+        $(this).removeClass('isy');
+        $('.password').attr('type', 'password');
+      }
+    }
+  })
+
+  $('.button').click(function() {
+    location.href = './index.html'
+  })
+</script>
+
+</html>

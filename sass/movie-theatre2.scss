@@ -1,0 +1,167 @@
+body {
+  min-width: 320px;
+  max-width: 750px;
+  height: 1625px;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 37.5px !important;
+  }
+}
+
+
+// 影片详情头部开始
+.header {
+  position: relative;
+  width: 100%;
+  height: 9.8667rem;
+  background: url('../img/图层8.png');
+  display: flex;
+  overflow: hidden;
+
+  .header-login {
+    width: 100%;
+    margin-top: 3.3333rem;
+    margin-left: 1.1733rem;
+
+    img {
+      width: .9333rem;
+    }
+
+  }
+}
+
+
+// 影城介绍模块开始
+.introduce {
+  width: 100%;
+  margin-top: 1.1733rem;
+  padding-left: 1.0667rem;
+  padding-right: 1.3333rem;
+  font-size: .64rem;
+  color: #131f44;
+
+  .p1 {
+    color: #000018;
+    font-size: .7467rem;
+    font-weight: bold;
+    margin-bottom: .6933rem;
+  }
+}
+
+
+// 价格评分模块开始
+.price {
+  width: 85%;
+  margin: 1.8667rem auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .64rem;
+  color: #8890a3;
+
+  li {
+    display: flex;
+    flex-direction: column;
+
+    .li-top {
+      display: flex;
+      align-items: center;
+      margin-bottom: .5333rem;
+
+      .p-img1 {
+        width: .6933rem;
+        margin-right: .2667rem;
+      }
+
+      .p-img2 {
+        width: .9067rem;
+        margin-right: .1333rem;
+      }
+
+      .p-img3 {
+        width: .8533rem;
+        margin-right: .3467rem;
+      }
+    }
+
+    .li-p {
+      font-size: .8533rem;
+      font-weight: bold;
+      color: #141337;
+    }
+  }
+}
+
+
+// 特色电影院模块开始
+.feature {
+  width: 100%;
+  padding-left: 1.0667rem;
+  color: #000018;
+  margin-top: 1.7867rem;
+  margin-bottom: .9067rem;
+
+  .title {
+    font-size: .8533rem;
+    font-weight: 700;
+  }
+
+  .feature-ul {
+    .feature-li {
+      display: flex;
+      margin-bottom: 1.3067rem;
+      img {
+        width: 5.5467rem;
+        border-radius: 14px;
+        margin-right: 1.1467rem;
+      }
+
+      .xq {
+        font-size: .64rem;
+
+        .p1 {
+          font-size: .8533rem;
+          font-weight: 700;
+          margin: .3733rem 0 .72rem 0;
+        }
+
+        .p2 {
+          color: #396dff;
+          margin-bottom: 1.3333rem;
+        }
+
+        .p3 {
+          color: #8890a3;
+        }
+
+        .timer {
+          width: 9.2533rem;
+          display: flex;
+          padding: 0;
+          flex-wrap: wrap;
+          li {
+            width: 2.6667rem;
+            height: 1.2533rem;
+            border: .0533rem solid #d1dfff;
+            border-radius: .2133rem;
+            margin-right: .4rem;
+            margin-top: .5333rem;
+            text-align: center;
+            line-height: 1.2533rem;
+            font-weight: 700;
+
+          }
+        }
+      }
+    }
+  }
+}

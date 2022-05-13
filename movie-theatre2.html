@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>影片详情</title>
+  <!-- 引入适配js -->
+  <script src="./js/flexible.js"></script>
+  <!-- 引入jquery -->
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <!-- 引入移动端css -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <!-- 引入自定义css -->
+  <link rel="stylesheet" href="./css/movie-theatre2.min.css">
+</head>
+
+<body>
+  <!-- 影片详情头部开始 -->
+  <header class="header">
+    <div class="header-login">
+      <a href="./movie-theatre.html">
+        <img src="./img/箭头(1).png" alt="">
+      </a>
+    </div>
+  </header>
+  <!-- 影片详情头部结束 -->
+
+
+  <!-- 影城介绍模块开始 -->
+  <div class="introduce">
+    <p class="p1">成都温江旭和影城</p>
+    <p>四川升成都市温江区文化路1号人民商场门口至交大立交方向内 侧3楼温江旭和影城</p>
+  </div>
+  <!-- 影城介绍模块结束 -->
+
+  <!-- 价格评分模块开始 -->
+  <ul class="price">
+    <li>
+      <div class="li-top">
+        <img src="./img/定位拷贝2.png" alt="" class="p-img1">
+        <p class="li-p">1.0km</p>
+      </div>
+      <p>15分钟</p>
+    </li>
+
+    <li>
+      <div class="li-top">
+        <img src="./img/￥.png" alt="" class="p-img2">
+        <img src="./img/￥.png" alt="" class="p-img2">
+        <img src="./img/￥.png" alt="" class="p-img2">
+        <img src="./img/￥.png" alt="" class="p-img2">
+      </div>
+      <span>￥30起</span>
+    </li>
+
+    <li>
+      <div class="li-top">
+        <img src="./img/多边形1.png" alt="" class="p-img3">
+        <p class="li-p">4.8</p>
+      </div>
+      <span>1000+ 评分</span>
+    </li>
+  </ul>
+  <!-- 价格评分模块结束 -->
+
+
+  <!-- 特色电影院模块开始 -->
+  <div class="feature">
+    <div class="title">
+      <p>特色电影</p>
+    </div>
+
+    <ul class="feature-ul">
+      <li class="feature-li">
+        <img src="./img/图层10.png" alt="">
+        <div class="xq">
+          <p class="p1">哥斯拉大战金刚</p>
+          <p class="p2">￥35.90</p>
+          <p class="p3">放映时间</p>
+          <ol class="timer">
+            <li>13:00</li>
+            <li>15:00</li>
+            <li>17:00</li>
+            <li>19:00</li>
+            <li>21:00</li>
+          </ol>
+        </div>
+      </li>
+
+      <li class="feature-li">
+        <img src="./img/图层11.png" alt="">
+        <div class="xq">
+          <p class="p1">指环王：护戒使者</p>
+          <p class="p2">￥35.90</p>
+          <p class="p3">放映时间</p>
+          <ol class="timer">
+            <li>13:00</li>
+            <li>15:00</li>
+            <li>17:00</li>
+            <li>19:00</li>
+            <li>21:00</li>
+          </ol>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!-- 特色电影院模块结束 -->
+</body>
+<script>
+  $('.feature-li').click(function() {
+    location.href = './now-showing.html'
+  })
+</script>
+</html>

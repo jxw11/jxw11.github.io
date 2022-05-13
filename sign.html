@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>注册</title>
+  <!-- 引入适配js -->
+  <script src="./js/flexible.js"></script>
+  <!-- 引入jquery -->
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <!-- 引入移动端css -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <!-- 引入自定义css -->
+  <link rel="stylesheet" href="./css/sign.min.css">
+</head>
+
+<body>
+  <!-- 注册头部开始 -->
+  <header class="header">
+    <img src="./img/椭圆1拷贝2.png" alt="" class="dw">
+    <div class="header-login">
+      <a href="./center.html">
+        <img src="./img/箭头(1).png" alt="">
+      </a>
+      <span>注册</span>
+    </div>
+  </header>
+  <!-- 注册头部结束 -->
+
+
+
+  <!-- 注册表单模块开始 -->
+  <form action="./login.html">
+    <div class="login-form">
+
+      <!-- 用户名 -->
+      <div class="user">
+        <div class="user-top">
+          <span>用户名</span>
+        </div>
+        <input type="text" placeholder="请输入您的用户名">
+      </div>
+
+      <!-- 密码 -->
+      <div class="s-pwd">
+        <div class="s-pwd-top">
+          <span>密码</span>
+        </div>
+        <input type="password" placeholder="请输入您的密码" class="s-password">
+      </div>
+
+      <!-- 确认密码 -->
+      <div class="pwd">
+        <div class="pwd-top">
+          <span>确认密码</span>
+        </div>
+        <input type="password" placeholder="请确认您的密码" class="password">
+        <span class="ye"></span>
+      </div>
+      <!-- 注册按钮 -->
+      <button class="button">立即注册</button>
+
+    </div>
+  </form>
+  <!-- 注册表单模块结束 -->
+</body>
+<script>
+  // 小眼睛
+  $('.ye').on('click', function () {
+    if (!$('.password').val() == '') {
+      if (!$(this).hasClass('isy')) {
+        $(this).addClass('isy');
+        $('.password').attr('type', 'text');
+      } else {
+        $(this).removeClass('isy');
+        $('.password').attr('type', 'password');
+      }
+    }
+  })
+</script>
+
+</html>

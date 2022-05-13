@@ -1,0 +1,281 @@
+body {
+  min-width: 320px;
+  max-width: 750px;
+  height: 1625px;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  background-color: #0B193F;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 37.5px !important;
+  }
+}
+
+
+// 影片详情头部开始
+.header {
+  position: relative;
+  width: 100%;
+  height: 6.6133rem;
+  background-color: #0B193F;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+
+  .dw {
+    position: absolute;
+    top: -2.3467rem;
+    right: -2.1333rem;
+    width: 8.16rem;
+  }
+
+  .header-login {
+    width: 100%;
+    height: 2.9333rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 3.2533rem;
+    margin-left: 1.04rem;
+
+    span {
+      color: #f2f2f2;
+      font-size: .96rem;
+      font-weight: bold;
+    }
+  }
+}
+
+
+// 影片二维码开始
+.qr-code {
+  width: 90%;
+  height: 25.3867rem;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: .4267rem;
+  overflow: hidden;
+
+  .qr-code-top {
+    position: relative;
+    width: 100%;
+    height: 8.5333rem;
+    border-bottom: 1px dashed #ccc;
+
+
+    .c1 {
+      display: block;
+      position: absolute;
+      width: 1.3333rem;
+      height: 1.3333rem;
+      border-radius: 50%;
+      background-color: #0B193F;
+      bottom: -0.6667rem;
+      left: -0.6667rem;
+    }
+
+    .c2 {
+      display: block;
+      position: absolute;
+      width: 1.3333rem;
+      height: 1.3333rem;
+      border-radius: 50%;
+      background-color: #0B193F;
+      bottom: -0.6667rem;
+      right: -0.6667rem;
+    }
+
+    // 订单模块开始
+    .indent {
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      padding-left: 1.0667rem;
+      padding-top: 1.1733rem;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+
+      img {
+        width: 3.12rem;
+        height: 5.6rem;
+        border-radius: 14px;
+        margin-right: .8533rem;
+      }
+
+      .ind {
+        height: 5.6rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: .64rem;
+
+        .p1 {
+          color: #4073ff;
+        }
+
+        .p2 {
+          font-size: .8533rem;
+          color: #000018;
+          font-weight: 700;
+          margin: .6133rem 0;
+        }
+
+        .p3 {
+          color: #8890a3;
+        }
+      }
+    }
+  }
+
+  .qr-code-body {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 9.68rem;
+    color: #000018;
+    overflow: hidden;
+    border-bottom: 1px dashed #caced7;
+
+    // 订单信息模块开始
+    .message {
+      width: 100%;
+      height: 9.68rem;
+      background-color: #fff;
+      margin-top: .4267rem;
+      padding-left: 1.0667rem;
+      padding-top: .96rem;
+      border-bottom: 1px dashed #caced7;
+
+      >li {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: .64rem;
+        margin-bottom: 1.2rem;
+
+        p {
+          margin-bottom: .64rem;
+        }
+
+        span {
+          font-size: .7467rem;
+          font-weight: 700;
+          color: #000018;
+        }
+
+        .m2 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .m21 {
+          margin-right: 3.9467rem;
+        }
+
+        .m22 {
+          margin-right: 3.3333rem;
+        }
+
+        .m23 {
+          margin-right: 3.8133rem;
+        }
+
+        .m1 {
+          .m1-ul {
+            display: flex;
+            align-items: center;
+
+            >li {
+              width: 1.0667rem;
+              height: 1.0667rem;
+              background-color: #4073ff;
+              border-radius: 8px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: #fff;
+              margin-right: .2667rem;
+            }
+          }
+        }
+      }
+
+      .last {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .qr-code-ft {
+    width: 100%;
+    height: 7.2267rem;
+    padding-left: 1.0933rem;
+
+    .f1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 35px;
+      font-size: .64rem;
+      color: #000018;
+
+      .p2 {
+        margin-right: 2.96rem;
+      }
+    }
+
+    .f2 {
+      margin-top: 1.3333rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .f2-img {
+        width: 3.4133rem;
+        height: 3.4133rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url('../img/矩形788.png') no-repeat;
+        background-size: 3.4133rem 3.4133rem;
+        margin-right: 1.4933rem;
+
+        img {
+          width: 2.9867rem;
+        }
+      }
+
+      .p1 {
+        color: #000018;
+        letter-spacing: .3456rem;
+        font-size: 1.28rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+
+.last {
+  display: flex;
+  width: 17.8667rem;
+  height: 2.56rem;
+  background: #4073ff;
+  border-radius: 16px;
+  margin: 2.08rem auto;
+  align-items: center;
+  justify-content: center;
+  font-size: .8533rem;
+  font-weight: 700;
+  color: #ffffff;
+}

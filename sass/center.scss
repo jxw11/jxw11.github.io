@@ -1,0 +1,149 @@
+body {
+  min-width: 320px;
+  max-width: 750px;
+  height: 1625px;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  // overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 37.5px !important;
+  }
+}
+
+// 登录头部开始
+.header {
+  position: relative;
+  width: 100%;
+  height: 540px;
+  background-color: #0B193F;
+  overflow: hidden;
+
+  .dw {
+    position: absolute;
+    top: -2.3467rem;
+    right: -3.1333rem;
+    width: 8.16rem;
+  }
+
+  p {
+    font-size: .96rem;
+    color: #f2f2f2;
+    margin-top: 2.9867rem;
+    margin-left: 1.04rem;
+    font-weight: 700;
+  }
+
+  .header-tx {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.0267rem;
+    .all {
+      position: relative;
+      .i1 {
+        width: 5.0133rem;
+      }
+      .i2 {
+        position: absolute;
+        width: 1.2267rem;
+        height: 1.2267rem;
+        right: .1333rem;
+        bottom: .1333rem;
+      }
+    }
+
+    span {
+      font-size: .7467rem;
+      color: #f2f2f2;
+      font-weight: 700;
+      margin-top: .96rem;
+    }
+  }
+
+}
+
+
+// 操作模块开始
+.cz {
+  width: 100%;
+  font-size: .7467rem;
+  margin: 0;
+  li {
+    width: 100%;
+    a {
+      display: flex;
+      width: 100%;
+      height: 3.4667rem;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 1.0667rem;
+      padding-right: 1.4667rem;
+      border-bottom: 1px solid #ccc;
+      color: #0b193f;
+      img {
+        width: .4rem;
+      }
+      .pr {
+        color: #FD1C1C;
+      }
+    }
+  }
+}
+
+// 底部导航模块开始
+.footer {
+  width: 100%;
+  height: 2.5867rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 5;
+  .footer-ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    .footer-li {
+      width: 1.0667rem;
+      height: 2.08rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: .4rem;
+      .footer-a {
+        width: 1.0667rem;
+        height: 1.0133rem;
+        background: url('../img/spite.png') no-repeat;
+        background-position: 0 0;
+      }
+      .a2 {
+        background-position: 0 -55px;
+      }
+      .a3 {
+        background-position: 0 -105px;
+      }
+      .a4 {
+        background-position: -53px -155px;
+      }
+      span {
+        width: 1.0667rem;
+        height: .8rem;
+        font-size: .5333rem;
+        color: #B6BAC5;
+      }
+    }
+  }
+}

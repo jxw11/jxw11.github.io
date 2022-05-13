@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>影院</title>
+  <!-- 引入适配js -->
+  <script src="./js/flexible.js"></script>
+  <!-- 引入jquery -->
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <!-- 引入移动端css -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <!-- 引入自定义css -->
+  <link rel="stylesheet" href="./css/movie-theatre.min.css">
+</head>
+
+<body>
+  <!-- 头部区域开始 -->
+  <header class="header">
+    <div class="header-top">
+      <div class="header-user">
+        <img src="./img/图标.png" alt="">
+        <p class="user">试试我们最好的电影院</p>
+      </div>
+    </div>
+
+    <div class="header-footer">
+      <div class="header-footer-l">
+        <img src="./img/定位.png" alt="">
+        <span>成都</span>
+      </div>
+
+      <div class="header-footer-r">
+        <img src="./img/向下-down (1).png" alt="">
+      </div>
+    </div>
+  </header>
+  <!-- 头部区域结束 -->
+
+  <!-- 影院模块开始 -->
+  <ul class="main">
+    <li>
+      <a href="">
+        <img src="./img/图层3.png" alt="">
+        <div class="box">
+          <p>UME影城（成都成华店）</p>
+          <div class="jl">
+            <img src="./img/定位拷贝2.png" alt="">
+            <span>1.0km</span>
+          </div>
+        </div>
+      </a>
+    </li>
+
+    <li>
+      <a href="">
+        <img src="./img/图层4.png" alt="">
+        <div class="box">
+          <p>SFC上影影城（成都科华IMAX店）</p>
+          <div class="jl">
+            <img src="./img/定位拷贝2.png" alt="">
+            <span>1.0km</span>
+          </div>
+        </div>
+      </a>
+    </li>
+
+    <li>
+      <a href="">
+        <img src="./img/图层5.png" alt="">
+        <div class="box">
+          <p>万达影城（财富又一城CINITY店）</p>
+          <div class="jl">
+            <img src="./img/定位拷贝2.png" alt="">
+            <span>231.0km</span>
+          </div>
+        </div>
+      </a>
+    </li>
+
+    <li>
+      <a href="">
+        <img src="./img/图层6.png" alt="">
+        <div class="box">
+          <p>太平洋影城（王府井店）</p>
+          <div class="jl">
+            <img src="./img/定位拷贝2.png" alt="">
+            <span>1.6km</span>
+          </div>
+        </div>
+      </a>
+    </li>
+
+    <li>
+      <a href="./movie-theatre2.html">
+        <img src="./img/图层7.png" alt="">
+        <div class="box">
+          <p>成都双楠电影城）</p>
+          <div class="jl">
+            <img src="./img/定位拷贝2.png" alt="">
+            <span>54.0km</span>
+          </div>
+        </div>
+      </a>
+    </li>
+
+    <li>
+      <a href="">
+        <img src="./img/图层8.png" alt="">
+        <div class="box">
+          <p>成都温江旭和影城</p>
+          <div class="jl">
+            <img src="./img/定位拷贝2.png" alt="">
+            <span>45.0km</span>
+          </div>
+        </div>
+      </a>
+    </li>
+
+    <li>
+      <a href="">
+        <img src="./img/图层9.png" alt="">
+        <div class="box">
+          <p>万达影城（红牌楼广场店）</p>
+          <div class="jl">
+            <img src="./img/定位拷贝2.png" alt="">
+            <span>31.0km</span>
+          </div>
+        </div>
+      </a>
+    </li>
+
+    <li>
+      <a href="">
+        <img src="./img/图层3.png" alt="">
+        <div class="box">
+          <p>UME影城（成都成华店）</p>
+          <div class="jl">
+            <img src="./img/定位拷贝2.png" alt="">
+            <span>1.0km</span>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+  <!-- 影院模块结束 -->
+
+
+
+
+  <!-- 底部导航模块开始 -->
+  <footer class="footer">
+    <ul class="footer-ul">
+      <li class="footer-li">
+        <a href="./index.html" class="footer-a">
+
+        </a>
+
+        <span>首页</span>
+      </li>
+
+      <li class="footer-li">
+        <a href="./movie-theatre.html" class="footer-a a2">
+
+        </a>
+        <span>影院</span>
+      </li>
+
+      <li class="footer-li">
+        <a href="./tickets.html" class="footer-a a3">
+
+        </a>
+        <span>影片</span>
+      </li>
+
+      <li class="footer-li">
+        <a href="./center.html" class="footer-a a4">
+
+        </a>
+        <span>我的</span>
+      </li>
+    </ul>
+  </footer>
+  <!-- 底部导航模块结束 -->
+</body>
+<script>
+  //文档高度
+  function getDocumentTop() {
+    var scrollTop = 0, bodyScrollTop = 0, documentScrollTop = 0;
+    if (document.body) {
+      bodyScrollTop = document.body.scrollTop;
+    }
+    if (document.documentElement) {
+      documentScrollTop = document.documentElement.scrollTop;
+    }
+    scrollTop = (bodyScrollTop - documentScrollTop > 0) ? bodyScrollTop : documentScrollTop; return scrollTop;
+  }
+
+  //可视窗口高度
+  function getWindowHeight() {
+    var windowHeight = 0;
+    if (document.compatMode == "CSS1Compat") {
+      windowHeight = document.documentElement.clientHeight;
+    } else {
+      windowHeight = document.body.clientHeight;
+    }
+    return windowHeight;
+  }
+
+  //滚动条滚动高度
+  function getScrollHeight() {
+    var scrollHeight = 0, bodyScrollHeight = 0, documentScrollHeight = 0;
+    if (document.body) {
+      bodyScrollHeight = document.body.scrollHeight;
+    }
+    if (document.documentElement) {
+      documentScrollHeight = document.documentElement.scrollHeight;
+    }
+    scrollHeight = (bodyScrollHeight - documentScrollHeight > 0) ? bodyScrollHeight : documentScrollHeight; return scrollHeight;
+  }
+
+  window.onscroll = function () {
+    //监听事件内容
+    if (getScrollHeight() == getWindowHeight() + getDocumentTop()) {
+      //当滚动条到底时,这里是触发内容
+      //异步请求数据,局部刷新dom
+      $('.footer').hide();
+    } else {
+      $('.footer').show();
+    }
+  }
+</script>
+</html>

@@ -1,0 +1,132 @@
+body {
+  min-width: 320px;
+  max-width: 750px;
+  height: 1625px;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 37.5px !important;
+  }
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 10.4rem;
+  color: #F2F2F2;
+  overflow: hidden;
+  background-color: #0b193f;
+}
+
+.header .header-login {
+  width: 100%;
+  height: 2.9333rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 3.3333rem;
+  margin-left: 1.0667rem;
+}
+
+.header .header-login img {
+  width: .9333rem;
+}
+
+.header .header-login span {
+  color: #f2f2f2;
+  font-size: .96rem;
+  font-weight: bold;
+}
+
+.header .dw {
+  position: absolute;
+  top: -2.3467rem;
+  right: -3.1333rem;
+  width: 8.16rem;
+}
+
+.header .toggle {
+  width: 90%;
+  height: 2.3467rem;
+  margin: 0 auto;
+  background-color: #233052;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: .64rem;
+  margin-top: 1.1733rem;
+}
+
+.header .toggle li {
+  width: 8.16rem;
+  height: 1.7067rem;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 1.7067rem;
+}
+
+.header .toggle .active {
+  background-color: #ffffff;
+  border-radius: 14px;
+  color: #000122;
+}
+
+.t1, .t2 {
+  width: 100%;
+  padding-left: 1.0667rem;
+  margin-top: 1.7067rem;
+  color: #263153;
+}
+
+.t1 li, .t2 li {
+  display: flex;
+  margin-bottom: 1.2267rem;
+}
+
+.t1 li img, .t2 li img {
+  width: 5.5467rem;
+  border-radius: .3733rem;
+  margin-right: .9067rem;
+}
+
+.t1 li .t1-box p, .t2 li .t1-box p {
+  font-size: .8533rem;
+  font-weight: bold;
+  color: #000018;
+  margin-top: .4267rem;
+  margin-bottom: .64rem;
+}
+
+.t1 li .t1-box .d1, .t2 li .t1-box .d1 {
+  margin: .64rem 0;
+}
+
+.t1 li .t1-box .d1 .s1, .t2 li .t1-box .d1 .s1 {
+  color: #8890a3;
+  margin-right: 2.48rem;
+}
+
+.t1 li .t1-box a, .t2 li .t1-box a {
+  display: block;
+  width: 4.5333rem;
+  height: 1.4933rem;
+  background: #4073ff;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 1.4933rem;
+  color: #ffffff;
+}
+
+.t1 li .t1-box .w, .t2 li .t1-box .w {
+  background-color: #edf0f9;
+  color: #4073FF;
+}
